@@ -1,4 +1,15 @@
-한화 시스템 SW
+<h1 align="center">개인 혹은 팀 To_DO List</h1>
+
+
+팀원
+=======
+```
+
+
+전승민(팀장), 박대호, 김민성, 심규혁
+
+
+```
 
 
 미니 프로젝트: spring boot, rest api, maven
