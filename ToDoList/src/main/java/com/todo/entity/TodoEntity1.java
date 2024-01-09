@@ -5,12 +5,16 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 // @Controller 처럼 @Entity라고 작성해야한다.
 public class TodoEntity1 {
 
@@ -31,4 +35,5 @@ public class TodoEntity1 {
 
     @Column(nullable = false)
     private Boolean completed;
+    
 }
