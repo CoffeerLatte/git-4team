@@ -31,8 +31,6 @@ public class MainController {
 	        return "redirect:/todo";
 	    }
 	    
-	    //
-	    
 	    @PostMapping("/todo/create")
 	    public String todoCreate(@RequestParam String content){
 	        this.toDoService.create(content);
