@@ -28,9 +28,9 @@ public class MainController {
 
 	    @RequestMapping("/")
 	    public String root(){
-	        return "redirect:/todo";
+	        return "main";
 	    }
-	    
+
 	    @PostMapping("/todo/create")
 	    public String todoCreate(@RequestParam String content){
 	        this.toDoService.create(content);
