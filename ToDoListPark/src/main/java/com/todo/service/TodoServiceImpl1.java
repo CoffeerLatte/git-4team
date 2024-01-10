@@ -2,27 +2,39 @@ package com.todo.service;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.todo.entity.TodoEntity1;
-import com.todo.repositories.ToDoRepository;
+import com.todo.repositories.TodoRepository_1;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Service
-public class ToDoServiceI implements ToDoService {
+public class TodoServiceImpl1 implements TodoService1 {
+	private final TodoRepository_1 toDoRepository;
+
+//	@Override
+//	public List<TodoEntity1> getList() {
+//		return this.toDoRepository.findAll();
+//	}
+
 	
-	@Autowired
-	private ToDoRepository toDoRepository;
+	@Override
+	public List<TodoEntity1> findByCustomerNum(Integer customerNum) {
+	    return this.toDoRepository.findBycustomernum(customerNum);
+	}
 
 	
 	
+	
+	
+	
 	@Override
-	public void create(String content, String date) {
+	public void create(String content, String date ) {
 		TodoEntity1 toDoEntity = new TodoEntity1();
+		
 		toDoEntity.setContent(content);
 		toDoEntity.setCompleted(false);
 		toDoEntity.setDate(date);
@@ -47,7 +59,7 @@ public class ToDoServiceI implements ToDoService {
 		toDoEntity.setContent(content);
 		this.toDoRepository.save(toDoEntity);
 	}
-
+	
 	@Override
 	@Transactional
 	public void completedUpdate(Integer id) {
@@ -57,9 +69,5 @@ public class ToDoServiceI implements ToDoService {
 		this.toDoRepository.save(toDoEntity);
 	}
 
-	@Override
-	public List<TodoEntity1> getList() {
-		return toDoRepository.findAll();
-	}
-
+	
 }

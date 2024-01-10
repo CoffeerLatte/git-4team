@@ -26,31 +26,23 @@
 	<table>
 		<thead>
 			<tr>
-				<th>번호&nbsp;&nbsp;</th>
-				<th>할 일&nbsp;&nbsp;</th>
-				<th>날짜&nbsp;&nbsp;</th>
-				<th>수행 여부&nbsp;&nbsp;</th>
-				<th>수행 여부 수정&nbsp;&nbsp;</th>
-				<th>내용 수정&nbsp;&nbsp;</th>
-				<th>삭제&nbsp;&nbsp;</th>
+				<th> 번호 </th>
+				<th> 할 일 </th>
+				<th> 날짜 </th>
+				<th> 수행 여부 </th>
+				<th>수행 여부 수정</th>
+				<th>내용 수정</th>
+				<th>삭제</th>
 			</tr>
 		</thead>
 		<tbody>
-			<label for="todoId">Enter ID:</label>
-			<input type="text" id="todoId">
-			<button onclick="getTodo()">Get To-Do Item</button>
-
-			<div id="todoInfo"></div>
-
-
-
 			<tr th:block th:each="todoentity : ${toDoEntityList}">
 				<td th:text="${todoentity.id}"></td>
 				<td th:text="${todoentity.content}"></td>
 				<td th:text="${todoentity.date}"></td>
 				<td th:text="${todoentity.completed}"></td>
 				<td><button id="completedUpdateBtn"
-						th:onclick="completedUpdate([[${todoentity.id}]])">완료 여부</button></td>
+						th:onclick="completedUpdate([[${todoentity.id}]])">수행 여부 수정</button></td>
 				<td><button id="reviseBtn"
 						th:onclick="openModal([[${todoentity.id}]])">수정</button></td>
 				<td><button id="delete-btn"
@@ -71,7 +63,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
 	let value = "";
-
+	
 	function deleteItem(id) {
 		console.log(id)
 		const url = "/todo/delete/" + id
@@ -86,7 +78,7 @@
 			alert(JSON.stringify(error));
 		});
 	}
-
+	
 	function completedUpdate(id) {
 		console.log(id);
 		const url = "/todo/completedUpdate/" + id;
@@ -95,7 +87,6 @@
 			url : url,
 			contentType : 'application/json; charset=utf-8'
 		}).done(function() {
-			/* alert('수행 여부가 수정되었습니다.'); */
 			window.location.href = '/';
 		}).fail(function(error) {
 			alert(JSON.stringify(error));
@@ -130,28 +121,5 @@
 		$(".modal").fadeOut();
 	}
 	
-	
-	async function getTodo() {
-	    const inputId = document.getElementById('todoId').value;
-	    const id = parseInt(inputId.trim(), 10);
-
-	    try {
-	        const response = await fetch(`/todos?id=${id}`);
-	        const todo = await response.json();
-
-	        const todoInfo = document.getElementById('todoInfo');
-	        todoInfo.innerHTML = '';
-
-	        if (todo) {
-	            const para = document.createElement('p');
-	            para.textContent = `ID: ${todo.id}, Content: ${todo.content}, Completed: ${todo.completed}, Date: ${todo.date}`;
-	            todoInfo.appendChild(para);
-	        } else {
-	            todoInfo.textContent = 'No To-Do item found for the given ID';
-	        }
-	    } catch (error) {
-	        console.error('Error fetching todo:', error);
-	    }
-
 </script>
 </html>

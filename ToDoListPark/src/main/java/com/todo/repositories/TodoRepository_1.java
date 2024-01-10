@@ -3,11 +3,11 @@ package com.todo.repositories;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import com.todo.entity.TodoEntity1;
 
+public interface TodoRepository_1 extends JpaRepository<TodoEntity1,Integer>{
 
-@Repository
-public interface ToDoRepository extends JpaRepository<TodoEntity1,Integer>{
+	List<TodoEntity1> findBycustomernum(Integer customernum);
+	
 }
