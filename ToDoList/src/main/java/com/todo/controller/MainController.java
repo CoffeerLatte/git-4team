@@ -33,6 +33,7 @@ public class MainController {
 		return "Todo";
 	}
 
+<<<<<<< HEAD
 	@RequestMapping("/")
 	public String root() {
 		return "redirect:/todo";
@@ -80,4 +81,16 @@ public class MainController {
 		return "redirect:/todo";
 	}
 
+=======
+	    @RequestMapping("/")
+	    public String root(){
+	        return "redirect:/todo";
+	    }
+	    
+	    @PostMapping("/todo/create")
+	    public String todoCreate(@RequestParam String content){
+	        this.toDoService.create(content);
+	        return "redirect:/todo";
+	    }
+>>>>>>> refs/remotes/origin/main
 }
