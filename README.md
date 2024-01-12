@@ -13,9 +13,12 @@
 
 
 미니 프로젝트: spring boot, rest api, maven
+> 미완료 : MSA(JWT 구성)
+> 
 
 
-프로젝트 이름 : 개인용 및 팀용 TodoList
+프로젝트 목표 : 개인이 사용할 수 있는 todo list 구성과 팀원이 서로 공유하고 볼 수 있는 todolist를 만들어보자.
+
 
 
 <details>
