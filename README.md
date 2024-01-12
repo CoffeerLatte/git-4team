@@ -31,3 +31,22 @@
 
 초기 구성 flow
 ![ToDo drawio](https://github.com/CoffeerLatte/git-4team/assets/125641153/4622d319-03b1-45a9-8d81-05c3bcb5e450)
+
+
+session login 완성 및 todo_list와 연동 과정
+-- 서로다른 테이블을 join하는 방법으로 원하는 데이터를 가져오려고 했다.
+-- 실패 (이유는 새로운 객체를 생성하여 가져오고 있었기 때문)
+-- 디버그 방법
+-- joincolumn을 사용하지 않고, 로그인을 하자마자, 로그인하는 파트에서 바로 데이터를 넘겨주는 방식으로 해결.
+
+session login + TodoList + team_todolist  연동과정
+
+
+안되었던 부분
+![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/3ab1ec85-0ba9-4d6b-bfec-046437a87e81)
+
+디버깅
+
+(설명부탁)
+
+
