@@ -36,8 +36,11 @@
 session login 완성 및 todo_list와 연동 과정
 -- 서로다른 테이블을 join하는 방법으로 원하는 데이터를 가져오려고 했다.
 -- 실패 (이유는 새로운 객체를 생성하여 가져오고 있었기 때문)
+![tempsnip](https://github.com/CoffeerLatte/git-4team/assets/125641153/40d58adc-6a8d-43a4-a431-5ff388d64dfc)
 -- 디버그 방법
 -- joincolumn을 사용하지 않고, 로그인을 하자마자, 로그인하는 파트에서 바로 데이터를 넘겨주는 방식으로 해결.
+![tempsnip](https://github.com/CoffeerLatte/git-4team/assets/125641153/40d58adc-6a8d-43a4-a431-5ff388d64dfc)
+해결하는 구문
 
 session login + TodoList + team_todolist  연동과정
 
