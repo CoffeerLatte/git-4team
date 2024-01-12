@@ -52,4 +52,8 @@ session login + TodoList + team_todolist  연동과정
 
 (설명부탁)
 
+-- 리다이렉션 문제
+데이터를 update, insert, delete, complete하고 나서 원하는 페이지로 redirection이 되지 않았음. 계속 메인페이지로 load.
+resource / template/ teamtodo.html 파일을 수정하여 update, delete, complete는 데이터 이동 동작 후 page를 reload하게 만듬.
+결과 : 데이터를 입력 후 입력한 데이터가 현재 html 페이지에 정상 반영됨.
 
