@@ -12,13 +12,13 @@ import com.todo.entity.TodoEntity2;
 public interface TeamTodoRepository extends JpaRepository<TodoEntity2, Integer> {
 
 	@Query(value = "SELECT * FROM todo_entity2 where team_id = ?", nativeQuery = true)
-	List<TodoEntity2> getTodoById(int team_id);
+	List<TodoEntity2> getTodoById(Long team_id);
 
 	@Query(value = "SELECT * FROM todo_entity2 where team_id = ? and content_id = ?", nativeQuery = true)
-	TodoEntity2 showTodoUpdate(int team_id, int content_id);
+	TodoEntity2 showTodoUpdate(Long team_id, Long content_id);
 
 	@Query(value = "DELETE FROM todo_entity2 where team_id = ? and content_id = ?", nativeQuery = true)
-	void deleteTodoById(int team_id, int content_id);
+	void deleteTodoById(Long team_id, Long content_id);
 	
 	/*
 	 * @Query(value =

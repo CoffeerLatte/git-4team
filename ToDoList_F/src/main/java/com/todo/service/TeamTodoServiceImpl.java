@@ -25,14 +25,14 @@ public class TeamTodoServiceImpl implements TeamTodoService {
 
 	// read 
 	@Override
-	public List<TodoEntity2> showTodoById(int team_id) {
+	public List<TodoEntity2> showTodoById(Long team_id) {
 		return teamTodoRepository.getTodoById(team_id);
 	}
 
 	
 	// update
 	@Override
-	public void updateTodo(int team_id, int content_id, TodoEntity2 todo) {
+	public void updateTodo(Long team_id, Long content_id, TodoEntity2 todo) {
 		
 		TodoEntity2 entity = teamTodoRepository.showTodoUpdate(team_id, content_id);
 		
@@ -45,7 +45,7 @@ public class TeamTodoServiceImpl implements TeamTodoService {
 	}
 
 	@Transactional
-	public void updateCompleted(int team_id, int content_id) {
+	public void updateCompleted(Long team_id, Long content_id) {
 		TodoEntity2 toDoEntity = teamTodoRepository.showTodoUpdate(team_id, content_id);
 
 		toDoEntity.setCompleted(!toDoEntity.getCompleted());
@@ -54,11 +54,8 @@ public class TeamTodoServiceImpl implements TeamTodoService {
 	
 	// delete
 	@Override
-	public void deleteTodo(int team_id, int content_id) {
+	public void deleteTodo(Long team_id, Long content_id) {
 		teamTodoRepository.deleteTodoById(team_id, content_id);
 	}
-	
-	
-
 
 }

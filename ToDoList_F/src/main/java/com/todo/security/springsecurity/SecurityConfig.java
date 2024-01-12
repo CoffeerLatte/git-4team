@@ -9,7 +9,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.todo.security.filter.JwtTokenFilter;
+//import com.todo.security.filter.JwtTokenFilter;
 import com.todo.security.service.UserService;
 import com.todo.security.userrole.UserRole;
 
@@ -32,7 +32,7 @@ public class SecurityConfig {
                 .csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .addFilterBefore(new JwtTokenFilter(userService, secretKey), UsernamePasswordAuthenticationFilter.class)
+//                .addFilterBefore(new JwtTokenFilter(userService, secretKey), UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
                 .requestMatchers("/jwt-login/info").authenticated()
                 .requestMatchers("/jwt-login/admin/**").hasAuthority(UserRole.ADMIN.name())

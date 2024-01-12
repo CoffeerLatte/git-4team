@@ -1,5 +1,7 @@
 package com.todo.entity;
 
+import org.springframework.stereotype.Component;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,12 +16,13 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Component
 public class TodoEntity2 { // 팀 테이블
 	
 	
-	private int personal_id; // 개인 식별
+	private Long personal_id; // 개인 식별
 
-	private int team_id;  // 팀 식별
+	private Long team_id;  // 팀 식별
 	
 	@Id
 	@Column(name="content_id")

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
 import com.todo.entity.TodoEntity1;
+import com.todo.entity.TodoEntity2;
 import com.todo.security.dto.JoinRequest;
 import com.todo.security.dto.LoginRequest;
 import com.todo.security.entity.User;
@@ -29,6 +30,7 @@ public class SessionLoginController {
 
     private final UserService userService;
     private final TodoEntity1 todoEntity1;
+    private final TodoEntity2 todoEntity2;
     
     
     @GetMapping(value = {"", "/"})
@@ -42,6 +44,7 @@ public class SessionLoginController {
         if(loginUser != null) {
             model.addAttribute("nickname", loginUser.getNickname());
             todoEntity1.setCustomernum(userId);
+            todoEntity2.setPersonal_id(userId);
             return "redirect:/session-login/todo";
         }
 
