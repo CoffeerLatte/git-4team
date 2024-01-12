@@ -14,10 +14,14 @@
 
 미니 프로젝트: spring boot, rest api, maven
 > 미완료 : MSA(JWT 구성)
-> 
 
 
-프로젝트 목표 : 개인이 사용할 수 있는 todo list 구성과 팀원이 서로 공유하고 볼 수 있는 todolist를 만들어보자
+
+### 프로젝트 목표 :
+
+개인이 사용할 수 있는 todo list 구성과 팀원이 서로 공유하고 볼 수 있는 todolist를 만들어보자
+
+[Google Sheet](https://docs.google.com/spreadsheets/d/1W5FWxfUWDjQPUbMkPeahi3Vn_Bxx6TmZ9QnIumbHlPE/edit?usp=sharing)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <details>
 <summary>초기 구성에 대한 캡처 및 설명</summary>
