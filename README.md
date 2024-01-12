@@ -88,6 +88,14 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 
 초기 구성 flow
-![ToDo drawio](https://github.com/CoffeerLatte/git-4team/assets/125641153/4622d319-03b1-45a9-8d81-05c3bcb5e450)
-<img src="https://github.com/CoffeerLatte/git-4team/assets/125641153/4622d319-03b1-45a9-8d81-05c3bcb5e450.png"  width="1000" height="500"/>
+
+![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/bcdbb329-6b68-4a3d-804e-aae663310f21)
+* todo 사용자 -> 회원가입 유무를 본인이 확인 -> 아이디가 있다면 로그인 -> 개인 todo list 사용 -> 팀용 todolist 사용 -> 개인용 todolist로 자유롭게 이동가능
+  
+> 아이디가 없다면 회원가입
+> 
+> 팀용 todolist에서의 팀원들 마다 구별법 추후 구상.
+
 ![캡처](https://github.com/CoffeerLatte/git-4team/assets/125641153/9225727a-c756-491b-a76a-651649f2b6c6)
+
+* 사용하게 될 기본적인 table 구상.
