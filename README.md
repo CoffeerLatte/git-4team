@@ -1,4 +1,4 @@
-<h1 align="center">개인 혹은 팀 To_DO List</h1>
+<h1 align="center"> To_DO List 개인 및 팀 버전  </h1>
 
 
 팀원
@@ -18,7 +18,11 @@
 프로젝트 이름 : 개인용 및 팀용 TodoList
 
 
-![캡처](https://github.com/CoffeerLatte/git-4team/assets/125641153/9225727a-c756-491b-a76a-651649f2b6c6)
+<details>
+
+  <summary>구현완료된 동작에 대한 캡쳐 및 설명</summary>
+  
+  ![캡처](https://github.com/CoffeerLatte/git-4team/assets/125641153/9225727a-c756-491b-a76a-651649f2b6c6)
 
 
 
@@ -87,3 +91,9 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/4aaf1122-e8f7-4ef7-97fc-079cbbbe3635) // maria db 데이터 베이스에 쌓이는 todoentity 정보 (개인)
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/36771c35-b123-4c29-abfb-0fe82e4b50ff) // maria db 데이터베이스에 쌓이는 회원가입한 계정 정보
+
+</details>
+
+
+
+
