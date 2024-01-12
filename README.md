@@ -80,3 +80,10 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/8feacc7c-0fd9-40bf-af12-2ad60f146038) // 개인 페이지에서의 수정 정상 기능
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/4cf9fa70-4ef8-457a-b335-2527bcfcee96) // 개인 페이지에서의 데이터 삭제 정상
+
+
+![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/3777d2c1-dca3-4da4-9037-3c804a17fa43) // maria db 데이터 베이스에 쌓이는 todoentity 정보 (팀)
+
+![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/4aaf1122-e8f7-4ef7-97fc-079cbbbe3635) // maria db 데이터 베이스에 쌓이는 todoentity 정보 (개인)
+
+![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/36771c35-b123-4c29-abfb-0fe82e4b50ff) // maria db 데이터베이스에 쌓이는 회원가입한 계정 정보
