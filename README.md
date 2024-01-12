@@ -17,20 +17,11 @@
 > 
 
 
-프로젝트 목표 : 개인이 사용할 수 있는 todo list 구성과 팀원이 서로 공유하고 볼 수 있는 todolist를 만들어보자.
-
-
-
-<details>
+프로젝트 목표 : 개인이 사용할 수 있는 todo list 구성과 팀원이 서로 공유하고 볼 수 있는 todolist를 만들어보자<details>
 
   <summary>구현완료된 동작에 대한 캡쳐 및 설명</summary>
   
-  ![캡처](https://github.com/CoffeerLatte/git-4team/assets/125641153/9225727a-c756-491b-a76a-651649f2b6c6)
-
-
-
-
-
+  
 
 
 session login 완성 및 todo_list와 연동 과정
@@ -98,5 +89,5 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 초기 구성 flow
 ![ToDo drawio](https://github.com/CoffeerLatte/git-4team/assets/125641153/4622d319-03b1-45a9-8d81-05c3bcb5e450)
-
-
+<img src="https://github.com/CoffeerLatte/git-4team/assets/125641153/4622d319-03b1-45a9-8d81-05c3bcb5e450.png"  width="1000" height="500"/>
+![캡처](https://github.com/CoffeerLatte/git-4team/assets/125641153/9225727a-c756-491b-a76a-651649f2b6c6)
