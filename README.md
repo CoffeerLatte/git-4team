@@ -30,14 +30,7 @@
 
 
 
-초기 구성
-![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/76007f30-4c8a-4c18-9863-cff0406a49d2)
 
-* 기본적인 데이터 입력 및 수정, 제거 기능 구현. todo의 기능 구현
-
-
-초기 구성 flow
-![ToDo drawio](https://github.com/CoffeerLatte/git-4team/assets/125641153/4622d319-03b1-45a9-8d81-05c3bcb5e450)
 
 
 session login 완성 및 todo_list와 연동 과정
@@ -97,6 +90,13 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 </details>
 
+초기 구성
+![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/76007f30-4c8a-4c18-9863-cff0406a49d2)
 
+* 기본적인 데이터 입력 및 수정, 제거 기능 구현. todo의 기능 구현
+
+
+초기 구성 flow
+![ToDo drawio](https://github.com/CoffeerLatte/git-4team/assets/125641153/4622d319-03b1-45a9-8d81-05c3bcb5e450)
 
 
