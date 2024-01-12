@@ -53,3 +53,6 @@ session login + TodoList + team_todolist  연동과정
 (설명부탁)
 
 
+redirection 문제
+-- 데이터를 update, delete, insert, complete를 한 후에 메인 페이지로 이동하던 문제가 발생함?
+
