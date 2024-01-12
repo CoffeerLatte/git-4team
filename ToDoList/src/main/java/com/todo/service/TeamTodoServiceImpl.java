@@ -5,8 +5,11 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.todo.entity.TodoEntity1;
 import com.todo.entity.TodoEntity2;
 import com.todo.repositories.TeamTodoRepository;
+
+import jakarta.transaction.Transactional;
 
 @Service
 public class TeamTodoServiceImpl implements TeamTodoService {
@@ -29,25 +32,33 @@ public class TeamTodoServiceImpl implements TeamTodoService {
 	
 	// update
 	@Override
-	public TodoEntity2 updateTodo(int team_id, int content_id, TodoEntity2 todo) {
+	public void updateTodo(int team_id, int content_id, TodoEntity2 todo) {
 		
 		TodoEntity2 entity = teamTodoRepository.showTodoUpdate(team_id, content_id);
 		
-		entity.setCompleted(todo.getCompleted());
+		/*
+		 * entity.setCompleted(false); entity.setDate(todo.getDate());
+		 */
 		entity.setDate(todo.getDate());
 		entity.setTeam_content(todo.getTeam_content());
-		
 		teamTodoRepository.save(entity);
-		
-		return entity;
 	}
 
+	@Transactional
+	public void updateCompleted(int team_id, int content_id) {
+		TodoEntity2 toDoEntity = teamTodoRepository.showTodoUpdate(team_id, content_id);
+
+		toDoEntity.setCompleted(!toDoEntity.getCompleted());
+		this.teamTodoRepository.save(toDoEntity);
+	}
 	
 	// delete
 	@Override
 	public void deleteTodo(int team_id, int content_id) {
 		teamTodoRepository.deleteTodoById(team_id, content_id);
 	}
+	
+	
 
 
 }

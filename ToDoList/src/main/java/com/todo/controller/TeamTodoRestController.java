@@ -36,10 +36,10 @@ public class TeamTodoRestController {
 	
 	// update
 	@PostMapping("/update/{team_id}/{content_id}")
-	public TodoEntity2 updateTodo(@PathVariable("team_id") int team_id,
+	public void updateTodo(@PathVariable("team_id") int team_id,
 								@PathVariable("content_id") int content_id, 
 								@RequestBody TodoEntity2 todo) {
-		return teamTodoService.updateTodo(team_id, content_id, todo);
+		teamTodoService.updateTodo(team_id, content_id, todo);
 	}
 
 	
