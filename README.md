@@ -33,7 +33,7 @@
 
 
 
-[Google Sheet(DB 및 ](https://docs.google.com/spreadsheets/d/1W5FWxfUWDjQPUbMkPeahi3Vn_Bxx6TmZ9QnIumbHlPE/edit?usp=sharing)
+[Google Sheet(4팀 프로젝트 문서)](https://docs.google.com/spreadsheets/d/1W5FWxfUWDjQPUbMkPeahi3Vn_Bxx6TmZ9QnIumbHlPE/edit?usp=sharing)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <details>
 <summary>초기 구성에 대한 캡처 및 설명</summary>
