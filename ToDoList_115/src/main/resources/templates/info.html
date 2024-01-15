@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="|${pageName}|"></title>
+</head>
+<body>
+<div>
+        <h1>유저 정보</h1>
+        <hr/>
+        <button type="button" class="btn btn-secondary" onclick="location.href='/session-login/todo/logout'">로그아웃</button>
+        &nbsp;
+        <button type="button" class="btn btn-secondary" onclick="location.href='/session-login/todo'">개인 할 일</button>
+        <div>
+            <div th:text="|아이디 : ${user.loginId}|"/>
+            <div th:text="|닉네임 : ${user.nickname}|"/>
+            <div th:text="|권한 : ${user.role}|"/>
+        </div>
+    </div>
+</body>
+</html>

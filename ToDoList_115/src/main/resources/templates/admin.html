@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ToDo List admin</title>
+</head>
+<style>
+.modal {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 50%;
+	left: 50%;
+	display: none;
+	transform: translate(-50%, -50%);
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);;
+}
+</style>
+<body>
+
+	<h1>ToDo List</h1>
+	
+	<form th:action="@{/todo/create}" method="post">
+		<input name="content" placeholder="할일" /> <input name="date"
+			placeholder="날짜" />
+		<button>작성</button>
+	</form>
+	
+	<table border="1">
+		<thead>
+			<tr>
+				<th> &nbsp; No. &nbsp;</th>
+				<th> &nbsp; 날짜 &nbsp;</th>
+				<th> &nbsp; To do &nbsp;</th>
+				<th> &nbsp; 완료 여부 &nbsp;</th>
+				<th> &nbsp; 할일 수정 &nbsp;</th>
+				<th> &nbsp; 할일 삭제 &nbsp;</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+		<button type="bu8080tton" class="btn btn-secondary" onclick="location.href='/session-login/todo/logout'">로그아웃</button>
+		&nbsp;
+		<button type="button" class="btn btn-secondary" onclick="location.href='/session-login/info'">mypage</button>
+		&nbsp;
+		<a href="/session-login/todo/teamtodo">팀 할일</a>
+		
+			<tr th:block th:each="todoentity : ${toDoEntityList}">
+				<td align='center' th:text="${todoentity.id}"></td>
+				<td align='center' th:text="${todoentity.date}"></td>
+				<td align='center' th:text="${todoentity.content}"></td>
+				<td align='center'><button id="completedUpdateBtn" th:text="${todoentity.completed}"
+						th:onclick="completedUpdate([[${todoentity.id}]])"></button></td>
+				<td align='center' ><button id="reviseBtn"
+						th:onclick="openModal([[${todoentity.id}]])">수정</button></td>
+				<td align='center' ><button id="delete-btn"
+						th:onclick="deleteItem([[${todoentity.id}]])">삭제</button></td>
+			</tr>
+		</tbody>	
+	</table>
+
+	<!-- 수정 완료 -->
+	<div class="modal">
+		<div class="modal_content">
+			<input id="reviseDate" type="text" placeholder="날짜를 수정해 주세요" />
+			<input id="revise" type="text" placeholder="내용을 수정해주세요" />
+			<button type="submit" id="completeBtn" onclick="reviseItem()">완료</button>
+		</div>
+	</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+	let value = "";
+	
+	function deleteItem(id) {
+		console.log(id)
+		const url = "/session-login/todo/delete/" + id
+		$.ajax({
+			type : 'delete',
+			url : url,
+			contentType : 'application/json; charset=utf-8'
+		}).done(function() {
+			alert('할 일이 삭제되었습니다.');
+			window.location.reload();
+		}).fail(function(error) {
+			alert(JSON.stringify(error));
+		});
+	}
+	
+	function completedUpdate(id) {
+		console.log(id);
+		const url = "/session-login/todo/completedUpdate/" + id;
+		$.ajax({
+			type : 'put',
+			url : url,
+			contentType : 'application/json; charset=utf-8'
+		}).done(function() {
+			window.location.reload();
+		}).fail(function(error) {
+			alert(JSON.stringify(error));
+		});
+	}
+
+	function openModal(id) {
+		value = id
+		$(".modal").fadeIn();
+	}
+
+	function reviseItem() {
+
+		var id = value;
+		// console.log(id)
+		var contentWritten = document.getElementById("revise").value;
+		var contentWritten2 = document.getElementById("reviseDate").value;
+		// var updateContent = contentWritten;
+		var data = {
+			content : contentWritten,	
+			date : contentWritten2	
+		};
+		// console.log(updateContent)
+		console.log(contentWritten)
+		console.log(contentWritten2)
+		
+		const url = "/session-login/todo/update/" + id;
+		
+		$.ajax({
+			type : 'put',
+			url : url,
+			contentType : 'application/json; charset=utf-8',
+			// data : updateContent,
+			data : JSON.stringify(data)
+		}).done(function() {
+			alert('할 일이 수정되었습니다.');
+			window.location.reload();
+		}).fail(function(error) {
+			alert(JSON.stringify(error));
+		});
+
+		$(".modal").fadeOut();
+	}
+	
+</script>
+</html>
