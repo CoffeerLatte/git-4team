@@ -45,9 +45,9 @@
 
 초기 구성 flow
 
-![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/bcdbb329-6b68-4a3d-804e-aae663310f21)
+![ToDo_flow](https://github.com/CoffeerLatte/git-4team/assets/80744883/4be876c3-ae46-47e7-8514-f8a812527932)
 
-* todo 사용자 -> 회원가입 유무를 본인이 확인 -> 아이디가 있다면 로그인 -> 개인 todo list 사용 -> 팀용 todolist 사용 -> 개인용 todolist로 자유롭게 이동가능
+* todo 사용자 -> 회원가입 유무를 본인이 확인 -> 아이디가 있다면 로그인 -> 개인 Todo List 사용 -> 팀 Todo List 사용 -> 개인 Todo List 사용(자유롭게 이동 가능)
   
 > 아이디가 없다면 회원가입
 > 
