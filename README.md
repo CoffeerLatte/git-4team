@@ -21,7 +21,19 @@
 
 개인이 사용할 수 있는 todo list 구성과 팀원이 서로 공유하고 볼 수 있는 todolist를 만들어보자
 
-[Google Sheet](https://docs.google.com/spreadsheets/d/1W5FWxfUWDjQPUbMkPeahi3Vn_Bxx6TmZ9QnIumbHlPE/edit?usp=sharing)
+
+# 역할 분담
+```
+전승민( 프로젝트 설계 , (개인/팀)간 데이터 연결, ToDo List 구조 설계, 발표자료 작성, 발표)
+심규혁()
+박대호()
+김민성()
+
+```
+
+
+
+[Google Sheet(DB 및 ](https://docs.google.com/spreadsheets/d/1W5FWxfUWDjQPUbMkPeahi3Vn_Bxx6TmZ9QnIumbHlPE/edit?usp=sharing)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <details>
 <summary>초기 구성에 대한 캡처 및 설명</summary>
@@ -106,8 +118,14 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/3777d2c1-dca3-4da4-9037-3c804a17fa43) // maria db 데이터 베이스에 쌓이는 todoentity 정보 (팀)
 
+
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/4aaf1122-e8f7-4ef7-97fc-079cbbbe3635) // maria db 데이터 베이스에 쌓이는 todoentity 정보 (개인)
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/36771c35-b123-4c29-abfb-0fe82e4b50ff) // maria db 데이터베이스에 쌓이는 회원가입한 계정 정보
 
 </details>
+
+
+
+
+# 최종 
