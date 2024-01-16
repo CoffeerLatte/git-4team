@@ -200,6 +200,7 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 
 // 개인 페이지에서의 todo 작성 결과
+
 ![insert2](https://github.com/CoffeerLatte/git-4team/assets/76561901/4f8c6cf8-91a4-4846-85ed-52c4992158c9)
 
 // 개인 페이지에서의 todo 열람
@@ -209,18 +210,21 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 ![update](https://github.com/CoffeerLatte/git-4team/assets/76561901/b8f5ff8b-fa2a-45c2-a11a-d3773a49248a)
 
 // 개인 페이지에서의 todo 수정 결과
+
 ![update2](https://github.com/CoffeerLatte/git-4team/assets/76561901/d88ac97c-c732-4658-bc4c-b97093476e97)
 
 // 개인 페이지에서의 todo 완료 처리 
 ![completed](https://github.com/CoffeerLatte/git-4team/assets/76561901/a202e13b-aa3d-4999-874e-910350f9b926)
 
 // 개인 페이지에서의 todo 완료 처리 결과
+
 ![completed2](https://github.com/CoffeerLatte/git-4team/assets/76561901/d9824008-8b45-4919-bf26-0e9159f8dd24)
 
 // 개인 페이지에서의 todo 삭제
 ![delete](https://github.com/CoffeerLatte/git-4team/assets/76561901/83971fb4-e683-426f-9896-a5f1d38f8194)
 
 // 개인 페이지에서의 todo 삭제 결과
+
 ![delete2](https://github.com/CoffeerLatte/git-4team/assets/76561901/b58ada6f-181f-4fbe-98e6-74cf0c19d2d9)
 
 </details>
