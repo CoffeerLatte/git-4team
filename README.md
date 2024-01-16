@@ -97,9 +97,9 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/38326061-67e5-4322-afcb-da18677ad553) // 다른 회원이 사용중인 닉네임의 경우
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/2819a290-3cef-436a-892c-76c185d6d027) // 로그인 시 자신만의 개인 todo리스트로 이동
 
-+ 팀 할일 버튼 및 로그아웃 버튼 상호 작용 가능.
-
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ 팀 할일 버튼 및 로그아웃 버튼 상호 작용 가능.
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/190d443d-467a-4b4d-ad22-5a55053fdab1) // 팀 할일 페이지
 
