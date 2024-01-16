@@ -129,6 +129,7 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/4170945b-c403-49a4-84c5-da4b57828d94) 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 + 팀 할일 페이지 Rest로 구현
 
 // 팀 할일 페이지 팀별 todolist 확인
@@ -167,6 +168,8 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
++ 개인 페이지 todo
+
 // 개인 페이지에서의 todo 작성
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/58d76433-b87d-4362-b3e4-85be66105356) 
 
@@ -187,6 +190,47 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 // maria db 데이터베이스에 쌓이는 회원가입한 계정 정보
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/36771c35-b123-4c29-abfb-0fe82e4b50ff) 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
++ 개인 페이지 todo Rest로 구현
+
+// 개인 페이지에서의 todo 작성
+![insert](https://github.com/CoffeerLatte/git-4team/assets/76561901/7e5716f6-620a-4d71-81b0-c0a84ac43a23)
+
+
+// 개인 페이지에서의 todo 작성 결과
+![insert2](https://github.com/CoffeerLatte/git-4team/assets/76561901/4f8c6cf8-91a4-4846-85ed-52c4992158c9)
+
+
+// 개인 페이지에서의 todo 열람
+![get](https://github.com/CoffeerLatte/git-4team/assets/76561901/f7d411bc-e407-4c91-b55d-4e5758989698)
+
+
+// 개인 페이지에서의 todo 수정
+![update](https://github.com/CoffeerLatte/git-4team/assets/76561901/b8f5ff8b-fa2a-45c2-a11a-d3773a49248a)
+
+
+// 개인 페이지에서의 todo 수정 결과
+![update2](https://github.com/CoffeerLatte/git-4team/assets/76561901/d88ac97c-c732-4658-bc4c-b97093476e97)
+
+
+// 개인 페이지에서의 todo 완료 처리 
+![completed](https://github.com/CoffeerLatte/git-4team/assets/76561901/a202e13b-aa3d-4999-874e-910350f9b926)
+
+
+// 개인 페이지에서의 todo 완료 처리 결과
+![completed2](https://github.com/CoffeerLatte/git-4team/assets/76561901/d9824008-8b45-4919-bf26-0e9159f8dd24)
+
+
+// 개인 페이지에서의 todo 삭제
+![delete](https://github.com/CoffeerLatte/git-4team/assets/76561901/83971fb4-e683-426f-9896-a5f1d38f8194)
+
+
+// 개인 페이지에서의 todo 삭제 결과
+![delete2](https://github.com/CoffeerLatte/git-4team/assets/76561901/b58ada6f-181f-4fbe-98e6-74cf0c19d2d9)
+
+
 
 </details>
 
