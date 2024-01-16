@@ -1,4 +1,4 @@
-<h1 align="center"> To_DO List 개인 및 팀 버전  </h1>
+![completed](https://github.com/CoffeerLatte/git-4team/assets/76561901/45660d5e-c377-4d80-942f-25c43c089baf)<h1 align="center"> To_DO List 개인 및 팀 버전  </h1>
 
 
 팀원
@@ -96,7 +96,10 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/38326061-67e5-4322-afcb-da18677ad553) // 다른 회원이 사용중인 닉네임의 경우
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/2819a290-3cef-436a-892c-76c185d6d027) // 로그인 시 자신만의 개인 todo리스트로 이동
+
 + 팀 할일 버튼 및 로그아웃 버튼 상호 작용 가능.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/190d443d-467a-4b4d-ad22-5a55053fdab1) // 팀 할일 페이지
 
@@ -108,6 +111,29 @@ resource / template/ teamtodo.html 파일을 수정하여 update, delete, comple
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/eabeb45e-a292-49cb-8139-170fd37c446c) // 팀 할일 페이지에서 방금 수정한 내용이 즉시 반영되는 모습
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/4170945b-c403-49a4-84c5-da4b57828d94) // 완료 버튼 정상 동작
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
++ 팀 할일 페이지 Rest로 구현
+  
+![image](https://github.com/CoffeerLatte/git-4team/assets/76561901/427b9eaa-5d62-4df3-ba5d-ab9fca2c1cbd) // 팀 할일 페이지 팀별 todolist 확인
+
+![insert](https://github.com/CoffeerLatte/git-4team/assets/76561901/5925b9ca-6922-416f-9809-9f85a17dcead) // 팀 할일 페이지 팀별 todolist 작성
+![insert2](https://github.com/CoffeerLatte/git-4team/assets/76561901/761d32ac-8100-4f29-882e-01dadd2ba5ca) //  팀 할일 페이지 팀별 todolist 작성 결과
+
+![update1](https://github.com/CoffeerLatte/git-4team/assets/76561901/6fd72434-13ac-41be-b46d-66e92c6a4ee7) //  팀 할일 페이지 팀별 할일 수정 전 
+![update2](https://github.com/CoffeerLatte/git-4team/assets/76561901/f9f135ae-cbd0-4592-88c9-1ac292b4545e)  //  팀 할일 페이지 팀별 할일 수정 화면
+![update3](https://github.com/CoffeerLatte/git-4team/assets/76561901/c0c1965f-89fd-4b9e-9dab-a06e60fef495)  //  팀 할일 페이지 팀별 할일 수정 후
+
+
+![completed](https://github.com/CoffeerLatte/git-4team/assets/76561901/d9e84329-3f6e-4e97-87e4-bc47ba88f903) // 팀 할일 페이지 할일 완료 처리
+![completed2](https://github.com/CoffeerLatte/git-4team/assets/76561901/308b8f34-2e20-430d-8c91-dc0a2392f23f) // 팀 할일 페이지 할일 완료 처리 결과
+
+![delete](https://github.com/CoffeerLatte/git-4team/assets/76561901/dd6f656f-1f44-4a29-b20d-359cbadab8a6) // 팀 할일 페이지 할일 삭제 처리
+![delete2](https://github.com/CoffeerLatte/git-4team/assets/76561901/cd24c320-270e-46e6-996c-de665f71920f) // 팀 할일 페이지 할일 삭제 처리 결과
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/58d76433-b87d-4362-b3e4-85be66105356) // 개인 페이지에서의 todo 작성
 
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/7964fe01-c4e5-4676-9345-8ac8b92eb3be) // 버튼 정상 동작
