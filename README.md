@@ -1,4 +1,4 @@
-![completed](https://github.com/CoffeerLatte/git-4team/assets/76561901/45660d5e-c377-4d80-942f-25c43c089baf)<h1 align="center"> To_DO List 개인 및 팀 버전  </h1>
+<h1 align="center"> To_DO List 개인 및 팀 버전  </h1>
 
 
 팀원
