@@ -90,6 +90,7 @@ session login + TodoList + team_todolist  연동과정
 데이터를 update, insert, delete, complete하고 나서 원하는 페이지로 redirection이 되지 않았음. 계속 메인페이지로 load.
 resource / template/ teamtodo.html 파일을 수정하여 update, delete, complete는 데이터 이동 동작 후 page를 reload하게 만듬.
 결과 : 데이터를 입력 후 입력한 데이터가 현재 html 페이지에 정상 반영됨.
+
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/7fc676f6-785a-4b92-9eac-7bbca1003b89) // 로그인
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/01c1386e-c12e-4299-b5bf-5308a3a4b886) // 회원가입
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/b33ce2cf-dc02-4892-bcf0-f2bab50550cd) //비밀번호가 틀렸을 경우
