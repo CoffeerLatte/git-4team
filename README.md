@@ -108,7 +108,9 @@ session login + TodoList + team_todolist  연동과정
 ![image](https://github.com/CoffeerLatte/git-4team/assets/125641153/3ab1ec85-0ba9-4d6b-bfec-046437a87e81)
 
 수정 메커니즘: team_id, content_id별 모달을 열어 날짜, 할일을 입력받아(String 타입) 버튼을 눌러 SQL문(update)으로 수정하는 방식
+
 오류: 400 Bad Request 발생 (Type Error) 
+
 해결 방법: js 함수에서 getElementId로 입력받은 데이터를 불러와서 배열처리 한 이후 ajax에서 dataType을 text로 바꾸고, data를 보내기 전 JSON.stringify()로 데이터를 String화 시켜 전송함으로써 해결
  
 
